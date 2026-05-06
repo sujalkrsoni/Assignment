@@ -162,8 +162,8 @@ export const InboxPage = () => {
                 </div>
                 {tab === "received" && inv.status === "PENDING" && (
                   <div className="flex gap-2 pt-3 border-t border-gray-200/50">
-                    <button type="button" onClick={() => void respond(inv._id, "ACCEPT")} className="flex-1 px-4 py-2.5 bg-lienar-to-r from-green-500 to-emerald-500 hover:from-green-600 hover:to-emerald-600 text-white font-bold rounded-xl text-sm hover:shadow-md transition-all">✅ Accept</button>
-                    <button type="button" onClick={() => void respond(inv._id, "REJECT")} className="flex-1 px-4 py-2.5 border-2 border-red-200 hover:border-red-300 text-red-600 hover:bg-red-50 font-bold rounded-xl text-sm transition-all">❌ Reject</button>
+                    <button type="button" onClick={() => void respond(inv._id, "ACCEPT")} className="flex-1 px-4 py-2.5 bg-blue-400 text-white font-bold rounded-xl text-sm hover:shadow-md transition-all"> Accept</button>
+                    <button type="button" onClick={() => void respond(inv._id, "REJECT")} className="flex-1 px-4 py-2.5 border-2 border-red-200 hover:border-red-300 text-red-600 hover:bg-red-50 font-bold rounded-xl text-sm transition-all"> Reject</button>
                   </div>
                 )}
               </div>
