@@ -266,11 +266,7 @@ export const DrinkPage = () => {
             <button
               type="button"
               onClick={continueToSummary}
-              disabled={
-                missingData ||
-                loading ||
-                (offerDrink && (selectedDrinkIds.length === 0 || drinks.length === 0))
-              }
+             disabled={missingData || loading}
               className="flex-1 bg-linear-to-r from-violet-600 to-purple-600 hover:from-violet-700 hover:to-purple-700 text-white font-bold py-4 rounded-2xl shadow-lg shadow-violet-500/25 transition-all active:scale-[0.98] uppercase tracking-wider text-xs lg:text-sm"
             >
               Continue to Summary →
